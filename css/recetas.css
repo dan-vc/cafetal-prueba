@@ -154,6 +154,18 @@ header {
 
 }
 
+.block-1{
+    height: 182px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.block-1 p{
+    font-size: 64px;
+    color: var(--secondary);
+    font-family: pacifico;
+}
 
 footer {
     width: 100%;
