@@ -371,7 +371,9 @@ footer p {
 }
 
 
-
+.block-2 button{
+    display: none;
+}
 
 
 
@@ -396,5 +398,43 @@ footer p {
     }
 
     
+    .block-1 p{
+        font-size: 48px;
+    }
 
+    .block-1{
+        text-align: center;
+    }
+
+    .block-2{
+        text-align: center;
+    }
+    .block-recetas .text_recetas{
+        display: none;
+    }
+
+    .text_titulo{
+        font-size: 40px !important;
+        text-align: center !important;
+    }
+
+    .block-recetas img{
+        width: 282px;
+        height: 236px;
+    }
+
+    .block-2 button{
+        font-size: 32px;
+        font-weight: 400;
+        font-family: pacifico;
+        height: 64px;
+        width: 226px;
+        border: none;
+        margin-top: 20px;
+        display: inline;
+        background-color: var(--primary);
+        border-radius: 20px;
+        cursor: pointer;
+        color: var(--light);
+    }
 }
