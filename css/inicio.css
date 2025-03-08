@@ -122,6 +122,10 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 section {
     padding: 4rem 2rem;
 }
@@ -427,39 +431,91 @@ footer p {
 }
 
 /* Locations Section */
-#Locations{
+#Locations {
     background: var(--dark);
     color: var(--light);
 
-    .heading{
+    .heading {
         text-align: center;
 
-        h2{
+        h2 {
             color: var(--tertiary);
         }
     }
 
-    .card-wrapper{
+    .card-wrapper {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 2.5rem;
 
-        .location-card{
+        .location-card {
             background: var(--light);
             color: var(--dark);
 
-            .card-info{
+            .card-info {
                 padding: 1rem;
 
-                .card-title{
+                .card-title {
                     font-weight: 600;
                     font-size: 20px;
                 }
 
-                .card-address{
+                .card-address {
                     opacity: .7;
                 }
             }
         }
+    }
+}
+
+/* WhyUs Section */
+#WhyUs {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        gap: 2rem;
+
+        &>.content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    .features {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .feature {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .icon {
+                background: var(--secondary);
+                min-width: 90px;
+                height: 90px;
+                fill: var(--tertiary);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &>.content {
+                padding: .5rem 0;
+
+                h3 {
+                    font-family: 'Poppins';
+                    font-weight: 800;
+                    font-size: 1.5rem;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+
     }
 }
