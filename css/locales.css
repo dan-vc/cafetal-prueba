@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #DE231F;
+    --secondary: #2C1712;
+    --tertiary: #DDB66F;
+    --dark: #333;
+    --light: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+}
+
+/* Header y navegación */
+header {
+    width: 100%;
+    background-color: white;
+}
+
+.container-1 {
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.container-1 img {
+    cursor: pointer;
+}
+
+.container-1 .redes {
+    display: flex;
+    gap: 30px;
+}
+
+.container-2 {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+.container-2 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container-2 li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container-2 a {
+    font-family: poppins;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 30px 45px;
+}
+
+.container-2 .activo {
+    color: white !important;
+    background-color: var(--primary);
+    padding: 30px 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-2 .desactivado {
+    padding: 30px 45px;
+    display: flex;
+    align-items: center;
+}
+
+.container-2 a:hover {
+    color: var(--primary);
+}
+
+.container-2 .boton-contacto {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    background-color: var(--primary);
+    font-family: poppins;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px 10px 40px;
+    box-shadow: 2px 0px 20px 10px rgba(255, 255, 255, 0.315);
+    cursor: pointer;
+}
+
+.flecha {
+    height: 15px;
+}
+
+/* Menú hamburguesa - oculto en desktop */
+.menu-hamburguesa {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* Contenedor de portada */
+.container-portada {
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 80px;
+    display: flex;
+    background: linear-gradient(to bottom, #4B2C24, #2B1712);
+    margin: 0;
+}
+
+.container-portada .text_1 {
+    padding-bottom: 20px;
+    font-family: poppins;
+    font-size: 16px;
+    color: var(--tertiary);
+}
+
+.container-portada .text_2 {
+    line-height: 85px;
+    font-family: pacifico;
+    font-size: 72px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.container-portada .text_3 {
+    font-family: poppins;
+    font-size: 16px;
+    width: 420px;
+    color: #FFFFFF;
+}
+
+.container-portada .boton-ver-mas {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    background-color: var(--primary);
+    font-family: poppins;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px 10px 40px;
+    box-shadow: 2px 0px 20px 10px rgba(255, 255, 255, 0.315);
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+/* Estilos para sección de ubicaciones */
+.ubicaciones-titulo {
+    text-align: center;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ubicaciones-titulo h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.ubicaciones-titulo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para cada ubicación */
+.ubicacion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    gap: 40px;
+}
+
+.ubicacion-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.ubicacion-info {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.ubicacion-info h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.ubicacion-direccion {
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.ubicacion-descripcion {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.ubicacion-experiencia {
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.ubicacion-imagen {
+    flex: 1;
+    max-width: 45%;
+}
+
+.ubicacion-imagen img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    height: 300px;
+}
+
+.separador {
+    height: 3px;
+    background-color: #ddd;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+/* Estilos para sede principal */
+.sede-principal {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sede-principal h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.sede-principal p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.mapa-container {
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.mapa-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 223px;
+    background-image: url('/img/locales/Footer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.footer-copyright {
+    margin-top: 70px;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 400;
+    color: #847571;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1100px) {
+    .container-2 .boton-contacto {
+        display: none;
+    }
+
+    .container-1 {
+        display: none;
+    }
+
+    .section1,
+    .text_1,
+    .text_3 {
+        display: none;
+    }
+
+    /* Mostrar menú hamburguesa en móvil */
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    /* Ocultar botón "Ver Mas" en móvil */
+    .boton-ver-mas {
+        display: none !important;
+    }
+
+    .section2 .text_2 {
+        text-align: center;
+        font-size: 48px;
+        width: 100%;
+    }
+
+    .menu-horizontal {
+        transition: transform 0.3s ease-in-out;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 300px;
+        text-align: center;
+        background-color: white;
+        flex-direction: column;
+        transform: translateX(-100%);
+        z-index: 1000;
+    }
+    
+    .menu-horizontal.active {
+        transform: translateX(0);
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 900;
+    }
+    
+    #overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .container-2 {
+        background-color: #4B2C24;
+        padding: 10px 20px;
+    }
+
+    .abrir-menu {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    .container-2 li {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-2 .desactivado,
+    .container-2 .activo {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .container-2 .activo {
+        background-color: var(--primary);
+        color: white !important;
+    }
+
+    .container-2 .desactivado {
+        color: #000000;
+        background-color: transparent;
+    }
+
+    /* Ajustes para ubicaciones en móvil */
+    .ubicacion-container,
+    .ubicacion-container.reverse {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .ubicacion-imagen {
+        max-width: 100%;
+        order: 1;
+    }
+
+    .ubicacion-info {
+        order: 2;
+        padding: 20px 0;
+    }
+
+    .separador {
+        margin: 30px 20px;
+    }
+
+    .sede-principal {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .menu-hamburguesa {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-horizontal {
+        width: 250px;
+    }
+
+    .container-2 .desactivado,
+    .container-2 .activo {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .container-portada .text_2 {
+        font-size: 36px;
+        line-height: 1.2;
+        padding-bottom: 30px;
+    }
+    
+    .ubicacion-imagen img {
+        height: 200px;
+    }
+}
