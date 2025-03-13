@@ -19,7 +19,7 @@
 }
 
 /* Header */
-header {
+.header {
     width: 100%;
     background-color: white;
 }
@@ -232,7 +232,7 @@ section {
         display: none;
     }
 
-    .section1,
+    .container-portada img,
     .text_1,
     .text_3,
     .buton-ver-mas {
