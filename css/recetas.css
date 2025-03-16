@@ -408,6 +408,38 @@ footer p {
 
 @media screen and (max-width: 1100px) {
 
+    .block-4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light);
+    }
+
+    .espresso-modal{
+        border-radius: 20px;
+        width: 308px;
+        background-color: white;
+        color: var(--secondary);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 20%);
+    }
+
+    .espresso-modal p{
+        font-size: 18.58px;
+        font-family: poppins;
+    }
+
+    .espresso-modal li{
+        list-style:circle;
+        display: inline;
+        color: var(--secondary);
+        font-size: 18.58px;
+        font-family: poppins;
+    }
+
     .section1,
     .text_1,
     .text_3,
