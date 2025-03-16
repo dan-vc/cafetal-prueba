@@ -108,11 +108,11 @@
                     <p class="text_8">Hablemos Ahora</p>
                     <p class="text_9">Estoy listo para escucharte.</p>
 
-                    <form action="">
-                        <input type="text" placeholder="Ingresar Nombre"><br><br>
-                        <input type="email" placeholder="Ingresar Email"><br><br>
-                        <input type="tel" placeholder="Ingresar Celular"><br><br>
-                        <textarea placeholder="Escribir Mensaje" rows="5" cols="40"></textarea><br><br>
+                    <form id="contactForm" action="#">
+                        <input type="text" placeholder="Ingresar Nombre" id="nombre"><br><br>
+                        <input type="email" placeholder="Ingresar Email" id="email"><br><br>
+                        <input type="tel" placeholder="Ingresar Celular" id="celular"><br><br>
+                        <textarea placeholder="Escribir Mensaje" rows="5" cols="40" id="mensaje"></textarea><br><br>
 
                         <button type="submit">Enviar</button>
                     </form>
@@ -140,6 +140,8 @@
         </div>
         <p>Copyright SenatinosPe. All rights reserved</p>
     </footer>
+
+    <script type="module" src="/js/sendMail.js"></script>
 </body>
 
 </html>
