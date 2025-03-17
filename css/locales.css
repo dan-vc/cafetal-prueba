@@ -40,6 +40,7 @@ header {
 .container-1 .redes {
     display: flex;
     gap: 30px;
+    list-style: none;
 }
 
 .container-2 {
@@ -312,6 +313,7 @@ footer {
     display: flex;
     gap: 50px;
     justify-content: center;
+    list-style: none;
 }
 
 .footer-copyright {
