@@ -299,7 +299,7 @@ footer p {
     }
 }
 
-/* WhyUs Section */
+/* Recipes Section */
 #Recipes {
     background: var(--tertiary);
 
@@ -347,6 +347,9 @@ footer p {
 
 
 @media screen and (max-width: 1100px) {
+    .boton-contacto {
+        display: none;
+    }
 
     /* About Us Section */
     #AboutUs .container {
@@ -482,7 +485,7 @@ footer p {
         }
     }
 
-    /* WhyUs Section */
+    /* Recipes Section */
     #Recipes {
         background: var(--tertiary);
 
